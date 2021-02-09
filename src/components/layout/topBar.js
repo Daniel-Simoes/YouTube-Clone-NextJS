@@ -6,6 +6,7 @@ import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
+import Hidden from '@material-ui/core/Hidden';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import Apps from '@material-ui/icons/Apps';
@@ -28,6 +29,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
             className={classes.logo}
           />
         </Box>
+        <Hidden mdDown>
           <Box>
             <Paper component="form" className={classes.search}>
               <InputBase
@@ -40,6 +42,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
               </IconButton>
             </Paper>
           </Box>
+        </Hidden>
         <Box display="flex">
           <IconButton className={classes.icons}>
             <VideoCall />
